@@ -1,5 +1,11 @@
 # Vuejs Modal Plugin
 
+####  Import and use the plugin in your main.js file
+```javascript
+import Modal from 'vue-modal';
+Vue.use(Modal);
+```
+
 ####  Add the modal tag as the first child in the App.vue
 ```html
 <template>
