@@ -1,11 +1,5 @@
 # Vuejs Modal Plugin
 
-####  Import and use the plugin in your main.js file
-```javascript
-import Modal from 'vue-modal';
-Vue.use(Modal);
-```
-
 ####  Add the modal tag as the first child in the App.vue
 ```html
 <template>
@@ -19,7 +13,7 @@ Vue.use(Modal);
 #### Call modal
 Event click:
 ```html
-<button @click="modal({ options })"></button>
+<button @click="modal({ options })">show modal</button>
 ```
 
 Programmatic:
@@ -28,7 +22,7 @@ Programmatic:
 this.modal({
   title: 'Title of the modal',
   content: '<p>some content as HTML</p> or just text',
-  onOpen: console.log('modal is shown')
+  onOpen: () => console.log('modal is shown')
 });
 
 //Close modal (just pass options as empty)

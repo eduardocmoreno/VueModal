@@ -24,20 +24,25 @@
     &.modal-deactive{
       animation: modal-close .35s ease-out;
     }
-    .modal-header {
+    .container-header {
       display: flex;
       justify-content: space-between;
       padding: 10px;
       min-height: 40px;
       background: $green;
       color: white;
-      .modal-title {
+      .header-title {
+        display: flex;
         flex: 1;
+        align-items: center;
       }
-      .modal-close {
+      .header-close {
         display: flex;
         margin-left: 10px;
+        border: 0;
+        background: transparent;
         &:before {
+          color: #fff;
           transform: rotate(45deg);
           font-family: Lucida;
           font-size: 30px;
@@ -47,7 +52,7 @@
         }
       }
     }
-    .modal-body{
+    .container-body{
       flex: 1;
       padding: 10px;
       max-width: 900px;
@@ -59,10 +64,8 @@
       & > :last-child{
         margin-bottom: 0;
       }
-      .iframe-wrapper{
-        &:first-child{
-          margin-bottom: 10px;
-        }
+      .body-alert{
+        color: red;
       }
     }
   }
